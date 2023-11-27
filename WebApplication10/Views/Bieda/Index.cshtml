@@ -1,0 +1,15 @@
+﻿@model IEnumerable<WebApplication10.Models.Country>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<ul>
+@foreach (var c in Model)
+            {
+                <li>@c.Name</li>
+            }
+</ul>
+
